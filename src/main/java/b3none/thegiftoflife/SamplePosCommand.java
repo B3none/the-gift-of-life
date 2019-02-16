@@ -1,4 +1,4 @@
-package b3none.the-gift-of-life.sample;
+package b3none.thegiftoflife;
 
 import org.bukkit.Location;
 import org.bukkit.command.Command;
@@ -6,10 +6,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-/**
- * Handler for the /pos sample command.
- * @author SpaceManiac
- */
 public class SamplePosCommand implements CommandExecutor
 {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] split)

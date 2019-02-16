@@ -1,4 +1,4 @@
-package b3none.the-gift-of-life.sample;
+package b3none.thegiftoflife;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -8,10 +8,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockCanBuildEvent;
 import org.bukkit.event.block.BlockPhysicsEvent;
 
-/**
- * Sample block listener
- * @author Dinnerbone
- */
 public class SampleBlockListener implements Listener
 {
     @EventHandler

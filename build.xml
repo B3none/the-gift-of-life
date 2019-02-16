@@ -1,5 +1,5 @@
-<project name="BukkitSamplePlugin" default="dist" basedir=".">
-	<property name="pluginname" value="BukkitSamplePlugin"/>
+<project name="TheGiftOfLife" default="dist" basedir=".">
+	<property name="pluginname" value="TheGiftOfLife"/>
 	<property name="bukkit.jar" location="../Bukkit/dist/Bukkit.jar"/>
 	<property name="plugins" location="../../plugins/"/>
 

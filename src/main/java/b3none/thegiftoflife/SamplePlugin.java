@@ -1,4 +1,4 @@
-package b3none.the-gift-of-life.sample;
+package b3none.thegiftoflife;
 
 import java.util.HashMap;
 import org.bukkit.entity.Player;
@@ -6,11 +6,6 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-/**
- * Sample plugin for Bukkit
- *
- * @author Dinnerbone
- */
 public class SamplePlugin extends JavaPlugin
 {
     private final SamplePlayerListener playerListener = new SamplePlayerListener(this);

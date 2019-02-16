@@ -1,4 +1,4 @@
-package b3none.the-gift-of-life.sample;
+package b3none.thegiftoflife;
 
 import org.bukkit.Location;
 import org.bukkit.event.EventHandler;
@@ -7,10 +7,6 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-/**
- * Handle events for all Player related events
- * @author Dinnerbone
- */
 public class SamplePlayerListener implements Listener
 {
     private final SamplePlugin plugin;
