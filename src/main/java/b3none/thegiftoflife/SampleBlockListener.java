@@ -12,9 +12,11 @@ import org.bukkit.event.block.BlockPhysicsEvent;
  * Sample block listener
  * @author Dinnerbone
  */
-public class SampleBlockListener implements Listener {
+public class SampleBlockListener implements Listener
+{
     @EventHandler
-    public void onBlockPhysics(BlockPhysicsEvent event) {
+    public void onBlockPhysics(BlockPhysicsEvent event)
+    {
         Block block = event.getBlock();
 
         if ((block.getType() == Material.SAND) || (block.getType() == Material.GRAVEL)) {
@@ -26,7 +28,8 @@ public class SampleBlockListener implements Listener {
     }
 
     @EventHandler
-    public void onBlockCanBuild(BlockCanBuildEvent event) {
+    public void onBlockCanBuild(BlockCanBuildEvent event)
+    {
         Material mat = event.getMaterial();
 
         if (mat.equals(Material.CACTUS)) {

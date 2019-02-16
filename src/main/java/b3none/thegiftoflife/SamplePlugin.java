@@ -11,13 +11,15 @@ import org.bukkit.plugin.java.JavaPlugin;
  *
  * @author Dinnerbone
  */
-public class SamplePlugin extends JavaPlugin {
+public class SamplePlugin extends JavaPlugin
+{
     private final SamplePlayerListener playerListener = new SamplePlayerListener(this);
     private final SampleBlockListener blockListener = new SampleBlockListener();
     private final HashMap<Player, Boolean> debugees = new HashMap<Player, Boolean>();
 
     @Override
-    public void onDisable() {
+    public void onDisable()
+    {
         // TODO: Place any custom disable code here
 
         // NOTE: All registered events are automatically unregistered when a plugin is disabled
@@ -27,7 +29,8 @@ public class SamplePlugin extends JavaPlugin {
     }
 
     @Override
-    public void onEnable() {
+    public void onEnable()
+    {
         // TODO: Place any custom enable code here including the registration of any events
 
         // Register our events
@@ -44,7 +47,8 @@ public class SamplePlugin extends JavaPlugin {
         getLogger().info( pdfFile.getName() + " version " + pdfFile.getVersion() + " is enabled!" );
     }
 
-    public boolean isDebugging(final Player player) {
+    public boolean isDebugging(final Player player)
+    {
         if (debugees.containsKey(player)) {
             return debugees.get(player);
         } else {
@@ -52,7 +56,8 @@ public class SamplePlugin extends JavaPlugin {
         }
     }
 
-    public void setDebugging(final Player player, final boolean value) {
+    public void setDebugging(final Player player, final boolean value)
+    {
         debugees.put(player, value);
     }
 }

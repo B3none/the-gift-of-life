@@ -11,25 +11,30 @@ import org.bukkit.event.player.PlayerQuitEvent;
  * Handle events for all Player related events
  * @author Dinnerbone
  */
-public class SamplePlayerListener implements Listener {
+public class SamplePlayerListener implements Listener
+{
     private final SamplePlugin plugin;
 
-    public SamplePlayerListener(SamplePlugin instance) {
+    public SamplePlayerListener(SamplePlugin instance)
+    {
         plugin = instance;
     }
 
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent event) {
+    public void onPlayerJoin(PlayerJoinEvent event)
+    {
         plugin.getLogger().info(event.getPlayer().getName() + " joined the server! :D");
     }
 
     @EventHandler
-    public void onPlayerQuit(PlayerQuitEvent event) {
+    public void onPlayerQuit(PlayerQuitEvent event)
+    {
         plugin.getLogger().info(event.getPlayer().getName() + " left the server! :'(");
     }
 
     @EventHandler
-    public void onPlayerMove(PlayerMoveEvent event) {
+    public void onPlayerMove(PlayerMoveEvent event)
+    {
         if (plugin.isDebugging(event.getPlayer())) {
             Location from = event.getFrom();
             Location to = event.getTo();
